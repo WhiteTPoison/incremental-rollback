@@ -15,7 +15,7 @@ typedef char*(*GetGameStateCb)();
 // [optional - for debugging] internal game frame derived from game memory, not our tracked frame 
 // we use this for asserts and stuff to make sure the internal game frame/data is on the frame we expect it to be
 // this location in memory should be part of the tracked allocation and should be written to every frame
-typedef u32*(*GetGameMemFrameCb)();
+typedef s32*(*GetGameMemFrameCb)();
 
 struct IncrementalRBCallbacks
 {
